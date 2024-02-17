@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #container{
+            width: 1350px;
+            margin: 50px auto;
+            background-color: white;
+        }
+        body{
+            background-color: lightblue;
+        }
+    </style>
+    <title>HTML Table</title> 
+</head>
+<body>
+    <div id="container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                <th scope="col">Age</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Full Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for name in users%}
+                <tr>
+                    <td scope="row">{{name['age']}}</td>
+                    <td>{{name['first_name']}}</td>
+                    <td>{{name['last_name']}}</td>
+                    <td>{{name['first_name']}} {{name['last_name']}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>           
+    </div>
+</body>
+</html>

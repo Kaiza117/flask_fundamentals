@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Playground</title>
+<style>
+    .topblock{
+        width: 1200px;
+        height: 300px;
+    }
+    .smallbox{
+        width: 200px;
+        height: 200px;
+        background-color:lightblue;
+        display: inline-block;
+        border-style: solid;
+        border-width: 5px;
+        border-color: navy;
+    }
+</style>
+</head>
+<body>
+    <div class= h1top>
+        <h1>Welcome to Level 2 Playground!</h1>
+    </div>
+    <div class="topblock">
+        {%for i in range(times):%}
+            <div class ="smallbox"></div>
+        {%endfor%}
+    </div>
+</body>
+</html>>
